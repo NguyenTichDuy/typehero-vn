@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { prisma } from '@repo/db';
 
-const URL = 'https://typehero.dev';
+const URL = 'https://typehero-vn-web.vercel.app';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const allChallenges = await prisma.challenge.findMany();
